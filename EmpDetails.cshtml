@@ -1,0 +1,60 @@
+﻿@model employee1.Models.t_employee
+
+<div>
+    <h4>Employee Details</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+           Employee Name
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.emp_name)
+        </dd>
+
+        <dt>
+            Employee Email
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.emp_email)
+        </dd>
+
+        <dt>
+            Employee Phone
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.emp_phone)
+        </dd>
+
+        <dt>
+            Designation
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.emp_designation)
+        </dd>
+
+        <dt>
+          Experience
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.emp_experience)
+        </dd>
+
+        <dt>
+            Address
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.emp_address)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "EmpEdit", new { id = Model.id }) |
+    @Html.ActionLink("Back to List", "EmpList")
+</p>
